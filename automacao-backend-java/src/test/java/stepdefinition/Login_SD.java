@@ -12,9 +12,7 @@ public class Login_SD {
 
     @Dado("^que informo os dados de login \"([^\"]*)\" \"([^\"]*)\"$")
     public void enterLoginData(String email, String password) throws Throwable {
-        //login.setEmail(email);
-        //login.setPassword(password);
-
+        
         Hooks.api.buildRequest(login);
     }
 

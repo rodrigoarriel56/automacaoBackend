@@ -9,8 +9,7 @@ Funcionalidade: Realizar Login
     Dado que informo os dados de login <email> <password>
     Quando envio uma requisição POST para "hml" "loginUser"
     Então o código de resposta é <statusCode>
-    E o serviço retorna o token na respota
-
+    
     Exemplos:
       | email                | password     | statusCode |
-      | "eve.holt@reqres.in" | "cityslicka" | 200        |
+      | "eve.holt@reqres.in" | "cityslicka" | 400        |

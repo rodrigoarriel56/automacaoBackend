@@ -19,7 +19,8 @@ import java.util.Properties;
 public class APIMethods {
 
     public static Response response;
-    public Properties properties = new PropertiesHelper().getProperties();
+    @SuppressWarnings("static-access")
+	public Properties properties = new PropertiesHelper().getProperties();
     public static RequestSpecification request = RestAssured.with();
     public String jsonRequest = null;
 
