@@ -2,7 +2,7 @@
 # encoding UTF-8
 
 @backend
-Funcionalidade: Realizar Login
+Funcionalidade: Apresenta lista de usuários
 
 @listaUsuario @regressivo
 Esquema do Cenario: Realizar a busca de usuário
@@ -11,8 +11,9 @@ Esquema do Cenario: Realizar a busca de usuário
 	
 		
     Exemplos:
-      | email | password | statusCode |
-      | "" 		| "" 			 | 200        |
+      | id  	| first_name | last_name   | statusCode |
+      | "7" 	| "Michael"	 | "Lawson"    | 		200			|
+      | "8" 	| "Lindsay"	 | "Ferguson"  | 		200			|
 		
 	 
   

@@ -15,6 +15,8 @@ import utils.PropertiesHelper;
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
+import org.junit.Test;
+
 public class APIMethods {
 
     public static Response response;
@@ -26,6 +28,7 @@ public class APIMethods {
 
 
     //Criar JsonRequest e Header
+    @Test
     public void buildRequest(Object pojoObject) throws UnsupportedEncodingException {
         ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT)
                 .setSerializationInclusion(JsonInclude.Include.NON_NULL);

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"features/ "},
         glue = {"stepdefinition", "commons"},
-        tags = {"@regressivo"},
+        tags = {"@listaUsuario"},
         dryRun = false,
         monochrome = true,
         plugin = {"report.ExtentCucumberFormatter:"})
