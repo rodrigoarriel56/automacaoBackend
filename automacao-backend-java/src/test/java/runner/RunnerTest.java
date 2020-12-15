@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"features/01-Login.feature"},
+        features = {"features/ "},
         glue = {"stepdefinition", "commons"},
-        tags = {"@login"},
+        tags = {"@regressivo"},
         dryRun = false,
         monochrome = true,
         plugin = {"report.ExtentCucumberFormatter:"})

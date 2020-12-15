@@ -6,16 +6,20 @@ import cucumber.api.java.pt.Então;
 import report.ExtentCucumberFormatter;
  
 public class ListUsers {
+	
+	   public ListUsers users = new ListUsers();
 
-	@Dado("^que eu esteja na tela de busca de usuário$")
-	public void que_eu_esteja_na_tela_de_busca_de_usuário() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	@Dado("^envio uma requisição GET para$")
+	public void envio_uma_requisicao_GET_para() throws Throwable
+	{
+		throw new PendingException();
 	}
 	
     @Então("^o código de resposta é$")
-    public void tokenLogin() {
+    public void o_codigo_de_resposta_e() 
+    {
     	ExtentCucumberFormatter.insertInfoTextInStepReport(":" + " ");
+    	
 
     	
     }

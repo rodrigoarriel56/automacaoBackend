@@ -4,10 +4,9 @@
 @backend
 Funcionalidade: Realizar Login
 
-@listaUsuario
-Esquema do Cenario: Realizar a busca de lista de usuário
-	Dado que eu esteja na tela de busca de usuário
-	Quando envio uma requisição POST para "hml" "listUsers"
+@listaUsuario @regressivo
+Esquema do Cenario: Realizar a busca de usuário
+	Dado envio uma requisição GET para "hml" "listUsers"
 	Então o código de resposta é <statusCode>
 	
 		

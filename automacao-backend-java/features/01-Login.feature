@@ -4,7 +4,7 @@
 @backend
 Funcionalidade: Realizar Login
 
-  @login
+  @login @regressivo
   Esquema do Cenario: Realizar login na aplicação
     Dado que informo os dados de login <email> <password>
     Quando envio uma requisição POST para "hml" "loginUser"
