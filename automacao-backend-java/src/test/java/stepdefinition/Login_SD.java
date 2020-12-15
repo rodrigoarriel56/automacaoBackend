@@ -16,7 +16,8 @@ public class Login_SD {
         Hooks.api.buildRequest(login);
     }
 
-    @Então("^o serviço retorna o token na respota$")
+    @SuppressWarnings("static-access")
+	@Então("^o serviço retorna o token na respota$")
     public void tokenLogin() {
         LoginToken = Hooks.api.response.then().extract().path("token").toString();
 

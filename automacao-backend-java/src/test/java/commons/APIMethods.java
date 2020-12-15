@@ -12,13 +12,13 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import report.ExtentCucumberFormatter;
 import utils.PropertiesHelper;
-
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
 public class APIMethods {
 
     public static Response response;
+    
     @SuppressWarnings("static-access")
 	public Properties properties = new PropertiesHelper().getProperties();
     public static RequestSpecification request = RestAssured.with();
