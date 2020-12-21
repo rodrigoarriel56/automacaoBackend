@@ -33,7 +33,8 @@ public class GenerateCPF {
         return iniciais + calcDigVerif(iniciais);
     }
 
-    private static boolean validaCPF(String cpf) {
+    @SuppressWarnings("unused")
+	private static boolean validaCPF(String cpf) {
         if (cpf.length() != 11)
             return false;
         String numDig = cpf.substring(0, 9);

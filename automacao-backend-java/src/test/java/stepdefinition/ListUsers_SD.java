@@ -14,6 +14,7 @@ public class ListUsers_SD {
 	public void enterLoginData(String id, String first_name, String last_name) throws Throwable {
         
         Hooks.api.buildRequest(users);
+        Hooks.api.getRequest(id, first_name);
     }
 	
     @SuppressWarnings("static-access")
@@ -24,7 +25,7 @@ public class ListUsers_SD {
 
         System.out.println("Token de login criado com sucesso:" + " " + ListUsers);
 
-        ExtentCucumberFormatter.insertInfoTextInStepReport("Token:" + " " + ListUsers);
+        ExtentCucumberFormatter.insertInfoTextInStepReport(ListUsers);
 
 
     	
